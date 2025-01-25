@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="content/css/style.css">
+    <link rel="stylesheet" href="content/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    
+</head>
+<body>
+    
+
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="content/photos/p7.jpg">
+      </div>
+      <div class="swiper-slide">
+        <img src="content/photos/p6.jpg">
+      </div>
+      <div class="swiper-slide">
+        <img src="content/photos/p5.jpg">
+      </div>
+      
+      <div class="swiper-slide">
+        <img src="content/photos/p4.jpg">
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+<main>
+  <div class="container">
+      <header>
+        
+        <h2> 
+           مواقيت الصلاة لمدن المملكة العربية السعودية
+        </h2>
+        <div class="flex">
+          <div class="cities border">
+            
+            <h1 id ="name-city"> </h1>
+          </div>
+          <div class="select-city">
+            
+            <select id="cities-select">
+              اختر المدينة
+              <option value="">اختر المدينة
+              </option>             
+            </select>
+          </div>
+        </div>
+       
+      </header>
+     
+    <section class="flex">
+      <div id="date" class="flex">
+        <!-- Dates By Api Axios -->
+      </div>
+      <div class="content flex border" id="cards">
+        <!-- Cards By For Loop -->
+      </div>
+    </section>
+    
+  </div>
+</main>
+  
+  <script src="./node_modules/axios/dist/axios.min.js"></script>
+ <script src="content/js/script.js"></script>
+</body>
+</html>

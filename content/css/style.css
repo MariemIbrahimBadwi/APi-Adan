@@ -1,0 +1,24 @@
+:root{
+    --mainColor: #896a27;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100vh;
+    transition:ease-in-out;
+    
+  }
+
+.swiper .swiper-slide img{
+    width:100%;
+    height:100%;
+    /* background-attachment; */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
